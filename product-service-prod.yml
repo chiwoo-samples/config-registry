@@ -1,0 +1,4 @@
+
+poc:
+  greeting: "(PROD) 안녕하세요~ 상품서비스 입니다."
+  client-id: "productSvcP01"

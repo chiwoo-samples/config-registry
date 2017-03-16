@@ -1,0 +1,14 @@
+greeting: "안녕하세요~"
+
+---
+spring:
+  profiles: dev
+
+greeting: "(DEV) CUSTOMER 안녕하세요~ 좋은아침이에요."
+
+
+---
+spring:
+  profiles: prod
+
+greeting: "(PROD) CUSTOMER 안녕하세요~"
