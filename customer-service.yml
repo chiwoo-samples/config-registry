@@ -1,23 +1,27 @@
-DISCOVERY_HOSTNAME: discovery.local
+CUSTOMER_HOSTNAME: localhost
+DISCOVERY_HOSTNAME: local.discovery
 greeting: "안녕하세요~"
 
 ---
 spring:
   profiles: dev
-
+CUSTOMER_HOSTNAME: dev.customerserver
+DISCOVERY_HOSTNAME: dev.discovery
 greeting: "(DEV) CUSTOMER 안녕하세요~ 좋은아침이에요."
 
 
 ---
 spring:
   profiles: prod
-
+CUSTOMER_HOSTNAME: prod.customerserver
+DISCOVERY_HOSTNAME: prod.discovery
 greeting: "(PROD) CUSTOMER 안녕하세요~"
 
 
 ---
 spring:
   profiles: aws.dev
+CUSTOMER_HOSTNAME: poc.customerserver.aws
 DISCOVERY_HOSTNAME: poc.discovery.aws
 greeting: "[AWS:DEVELOPMENT:CUSTOMER-SERVICE] 안녕하세요~"
 
@@ -25,5 +29,6 @@ greeting: "[AWS:DEVELOPMENT:CUSTOMER-SERVICE] 안녕하세요~"
 ---
 spring:
   profiles: aws.prod
+CUSTOMER_HOSTNAME: poc.customerserver.aws
 DISCOVERY_HOSTNAME: poc.discovery.aws
 greeting: "[AWS:PRODUCTION:CUSTOMER-SERVICE] 안녕하세요~"
