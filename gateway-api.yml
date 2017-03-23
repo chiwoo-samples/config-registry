@@ -1,5 +1,5 @@
 GATEWAY_HOSTNAME: local.gateway
-DISCOVERY_HOSTNAME: discovery.local
+DISCOVERY_HOSTNAME: local.discovery
 CUSTOMER_HOSTNAME: localhost
 
 ---
