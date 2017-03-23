@@ -1,4 +1,5 @@
+DISCOVERY_HOSTNAME: local.discovery
 
 poc:
-  greeting: "안녕하세요~ 상품서비스 입니다."
-  client-id: "productSvcA01"
+  greeting: "(LOCAL-PRODUCT-SERVICE) 안녕하세요~ 상품서비스 입니다."
+  client-id: "LOCAL-SVC-L01"

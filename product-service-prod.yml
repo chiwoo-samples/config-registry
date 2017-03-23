@@ -1,4 +1,5 @@
+DISCOVERY_HOSTNAME: prod.discovery
 
 poc:
-  greeting: "(PROD) 안녕하세요~ 상품서비스 입니다."
-  client-id: "productSvcP01"
+  greeting: "(PROD-PRODUCT-SERVICE) 안녕하세요~ 상품서비스 입니다."
+  client-id: "PRODUCT-SVC-P01"

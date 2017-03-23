@@ -1,5 +1,5 @@
-DISCOVERY_SERVICE_DOMAIN: poc-discovery-service
+DISCOVERY_HOSTNAME: dev.discovery
 
 poc:
-  greeting: "(DEV) 안녕하세요~ 상품서비스 입니다. KK"
-  client-id: "productSvcD01"
+  greeting: "(DEV-PRODUCT-SERVICE) 안녕하세요~ 상품서비스 입니다."
+  client-id: "DEV-SVC-L01"

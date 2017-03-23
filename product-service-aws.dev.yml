@@ -1,0 +1,5 @@
+DISCOVERY_HOSTNAME: poc.discovery.aws
+
+poc:
+  greeting: "[AWS:DEVELOPMENT:PRODUCT-SERVICE] 안녕하세요~ 상품서비스 입니다."
+  client-id: "AWSDEVDEV-SVC-D01"

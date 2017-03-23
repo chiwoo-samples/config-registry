@@ -1,3 +1,4 @@
+DISCOVERY_HOSTNAME: discovery.local
 greeting: "안녕하세요~"
 
 ---
@@ -12,3 +13,17 @@ spring:
   profiles: prod
 
 greeting: "(PROD) CUSTOMER 안녕하세요~"
+
+
+---
+spring:
+  profiles: aws.dev
+DISCOVERY_HOSTNAME: poc.discovery.aws
+greeting: "[AWS:DEVELOPMENT:CUSTOMER-SERVICE] 안녕하세요~"
+
+
+---
+spring:
+  profiles: aws.prod
+DISCOVERY_HOSTNAME: poc.discovery.aws
+greeting: "[AWS:PRODUCTION:CUSTOMER-SERVICE] 안녕하세요~"
