@@ -2,6 +2,13 @@ GATEWAY_HOSTNAME: local.gateway
 DISCOVERY_HOSTNAME: local.discovery
 CUSTOMER_HOSTNAME: localhost
 
+
+zuul:
+  routes:
+    booking-by-service:
+      path: /s/booking/**
+      service-id: booking-service
+
 ---
 spring:
   profiles: aws.dev
