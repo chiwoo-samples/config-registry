@@ -1,0 +1,57 @@
+zuul:
+  ignoredPatterns: /**/admin/**
+  prefix: /api
+
+  routes:
+#   api: /api/**
+    customer-by-service:
+      path: /s/customer/**
+      service-id: customer-service
+#    customer-by-ip:
+#      path: /ip/customer/**
+#      url: http://${CUSTOMER_HOST_IP:127.0.0.1}:8101/
+    customer-by-domain:
+      path: /nm/customer/**
+      url: http://${CUSTOMER_HOSTNAME:localhost}:8101/
+    product-by-service:
+      path: /s/product/**
+      service-id: product-service 
+#    product-by-ip:
+#      path: /ip/product/**
+#      url: http://${PRODUCT_HOST_IP:127.0.0.1}:8201/
+    product-by-domain:
+      path: /nm/product/**
+      url: http://${PRODUCT_HOSTNAME:poc.productserver.aws}:8201/
+#    booking-by-service:
+#      path: /s/booking/**
+#      service-id: booking-service
+    proxy-service: 
+      path: /mc/**
+      service-id: cluster-api
+
+    static:
+      path: /static/**
+
+
+GATEWAY_HOSTNAME: local.gateway
+DISCOVERY_HOSTNAME: local.discovery
+CUSTOMER_HOSTNAME: localhost
+
+
+---
+spring:
+  profiles: aws.dev
+GATEWAY_HOSTNAME: poc.gateway.aws
+DISCOVERY_HOSTNAME: poc.discovery.aws
+CUSTOMER_HOSTNAME: poc.customerserver.aws
+PRODUCT_HOSTNAME: poc.productserver.aws
+
+
+---
+spring:
+  profiles: aws.prod
+GATEWAY_HOSTNAME: poc.gateway.aws
+DISCOVERY_HOSTNAME: poc.discovery.aws
+CUSTOMER_HOSTNAME: poc.customerserver.aws
+PRODUCT_HOSTNAME: poc.productserver.aws
+
