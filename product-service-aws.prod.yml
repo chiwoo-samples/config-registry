@@ -1,3 +1,4 @@
+PRODUCT_HOSTNAME: poc.productserver.aws
 DISCOVERY_HOSTNAME: poc.discovery.aws
 
 poc:

@@ -1,3 +1,4 @@
+PRODUCT_HOSTNAME: prod.productserver
 DISCOVERY_HOSTNAME: prod.discovery
 
 poc:
