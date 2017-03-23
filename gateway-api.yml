@@ -1,0 +1,21 @@
+GATEWAY_HOSTNAME: local.gateway
+DISCOVERY_HOSTNAME: discovery.local
+CUSTOMER_HOSTNAME: localhost
+
+---
+spring:
+  profiles: aws.dev
+GATEWAY_HOSTNAME: poc.gateway.aws
+DISCOVERY_HOSTNAME: poc.discovery.aws
+CUSTOMER_HOSTNAME: poc.customerserver.aws
+PRODUCT_HOSTNAME: poc.productserver.aws
+
+
+---
+spring:
+  profiles: aws.prod
+GATEWAY_HOSTNAME: poc.gateway.aws
+DISCOVERY_HOSTNAME: poc.discovery.aws
+CUSTOMER_HOSTNAME: poc.customerserver.aws
+PRODUCT_HOSTNAME: poc.productserver.aws
+
