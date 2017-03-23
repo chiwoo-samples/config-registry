@@ -22,9 +22,10 @@ zuul:
     product-by-domain:
       path: /nm/product/**
       url: http://${PRODUCT_HOSTNAME:poc.productserver.aws}:8201/
-#    booking-by-service:
-#      path: /s/booking/**
-#      service-id: booking-service
+#   동적 라우팅을 테스트 해보자구      
+    booking-by-service:
+      path: /s/bok/**
+      service-id: booking-service
     proxy-service: 
       path: /mc/**
       service-id: cluster-api
