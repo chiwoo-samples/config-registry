@@ -23,7 +23,7 @@ spring:
   profiles: aws.dev
 CUSTOMER_HOSTNAME: poc.customerserver.aws
 DISCOVERY_HOSTNAME: poc.discovery.aws
-greeting: "[AWS:DEVELOPMENT:CUSTOMER-SERVICE] 안녕하세요~"
+greeting: "[AWS:DEVELOPMENT:CUSTOMER-SERVICE] 안녕하세요~ 베스핀글로벌 입니다."
 
 
 ---
