@@ -1,0 +1,13 @@
+DISCOVERY_HOSTNAME: local.discovery
+
+---
+spring:
+  profiles: aws.dev
+DISCOVERY_HOSTNAME: poc.discovery.aws
+
+
+---
+spring:
+  profiles: aws.prod
+DISCOVERY_HOSTNAME: poc.discovery.aws
+
